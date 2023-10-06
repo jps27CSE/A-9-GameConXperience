@@ -1,38 +1,44 @@
 {
   "services": [
     {
+      "id": 1,
       "name": "VIP Pass Package",
-      "image": "vip_pass_image.jpg",
+      "image": "https://i.ibb.co/YtPKyvP/sean-do-EHLd2ut-Ef68-unsplash.jpg",
       "price": 199,
       "description": "Enjoy the ultimate gaming convention experience with our VIP Pass Package. Includes priority access, exclusive meet and greets, and premium swag."
     },
     {
+      "id": 2,
       "name": "Panel and Workshop Access",
-      "image": "panel_workshop_image.jpg",
+      "image": "https://i.ibb.co/GptkFYk/brooke-cagle-g1-Kr4-Ozfoac-unsplash.jpg",
       "price": 59,
       "description": "Gain access to all panels, workshops, and educational sessions at the convention. Learn from industry experts and level up your gaming skills."
     },
     {
+      "id": 3,
       "name": "Cosplay Contest Entry",
-      "image": "cosplay_contest_image.jpg",
+      "image": "https://i.ibb.co/0Q1sqzq/format-arw-PXj-Qa-Gxi4-JA-unsplash.jpg",
       "price": 20,
       "description": "Showcase your cosplay talent and compete for fantastic prizes in our cosplay contest. Show off your creativity and win big!"
     },
     {
+      "id": 4,
       "name": "Gaming Tournament Registration",
-      "image": "tournament_registration_image.jpg",
+      "image": "https://i.ibb.co/7KxBMBr/alex-haney-x-Wk-RYo-Sf8-c-unsplash.jpg",
       "price": "Varies",
       "description": "Compete in thrilling gaming tournaments across various titles. Register for your favorite games and compete for glory and prizes."
     },
     {
+      "id": 5,
       "name": "Indie Game Showcase Booth",
-      "image": "indie_game_booth_image.jpg",
+      "image": "https://i.ibb.co/mSDYGBV/carl-raw-m3hn2-Kn5-Bns-unsplash.jpg",
       "price": 299,
       "description": "Indie game developers, reserve a booth to showcase your games to a passionate gaming audience. Get noticed and grow your fanbase."
     },
     {
+      "id": 6,
       "name": "Merchandise Expo Pass",
-      "image": "merchandise_expo_image.jpg",
+      "image": "https://i.ibb.co/VYSqx9T/quino-al-b4-Je3j15-OJQ-unsplash.jpg",
       "price": 10,
       "description": "Access our merchandise expo featuring the latest gaming gear, collectibles, and exclusive items. Shop for gaming goodies!"
     }
