@@ -1,7 +1,28 @@
 import { Link } from "react-router-dom";
 import background from "../../assets/bg.jpg";
+import { useContext } from "react";
+import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { toast } from "react-toastify";
 
 const Login = () => {
+  const { loginUser } = useContext(AuthContext);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+
+    loginUser(email, password)
+      .then((result) => {
+        toast.success(`
+        Login Successfully!...................
+
+        Email : ${result.user.email} 
+        `);
+      })
+      .catch((error) => toast.error(error.message));
+  };
+
   return (
     <div
       style={{
@@ -21,13 +42,14 @@ const Login = () => {
             </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form className="card-body" onSubmit={handleLogin}>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
                 </label>
                 <input
                   type="email"
+                  name="email"
                   placeholder="email"
                   className="input input-bordered"
                   required
@@ -39,6 +61,7 @@ const Login = () => {
                 </label>
                 <input
                   type="password"
+                  name="password"
                   placeholder="password"
                   className="input input-bordered"
                   required
