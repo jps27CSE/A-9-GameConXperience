@@ -1,0 +1,40 @@
+{
+  "services": [
+    {
+      "name": "VIP Pass Package",
+      "image": "vip_pass_image.jpg",
+      "price": 199,
+      "description": "Enjoy the ultimate gaming convention experience with our VIP Pass Package. Includes priority access, exclusive meet and greets, and premium swag."
+    },
+    {
+      "name": "Panel and Workshop Access",
+      "image": "panel_workshop_image.jpg",
+      "price": 59,
+      "description": "Gain access to all panels, workshops, and educational sessions at the convention. Learn from industry experts and level up your gaming skills."
+    },
+    {
+      "name": "Cosplay Contest Entry",
+      "image": "cosplay_contest_image.jpg",
+      "price": 20,
+      "description": "Showcase your cosplay talent and compete for fantastic prizes in our cosplay contest. Show off your creativity and win big!"
+    },
+    {
+      "name": "Gaming Tournament Registration",
+      "image": "tournament_registration_image.jpg",
+      "price": "Varies",
+      "description": "Compete in thrilling gaming tournaments across various titles. Register for your favorite games and compete for glory and prizes."
+    },
+    {
+      "name": "Indie Game Showcase Booth",
+      "image": "indie_game_booth_image.jpg",
+      "price": 299,
+      "description": "Indie game developers, reserve a booth to showcase your games to a passionate gaming audience. Get noticed and grow your fanbase."
+    },
+    {
+      "name": "Merchandise Expo Pass",
+      "image": "merchandise_expo_image.jpg",
+      "price": 10,
+      "description": "Access our merchandise expo featuring the latest gaming gear, collectibles, and exclusive items. Shop for gaming goodies!"
+    }
+  ]
+}
