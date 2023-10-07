@@ -4,7 +4,7 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
-  console.log(user);
+
   const navLinks = (
     <>
       <li>
@@ -14,7 +14,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto sticky top-0 ">
+    <div className="max-w-6xl mx-auto  ">
       <div className="navbar bg-base-100 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
@@ -50,7 +50,6 @@ const Navbar = () => {
         <div className="navbar-end">
           {user && (
             <>
-              {" "}
               <label
                 tabIndex={0}
                 className="btn btn-ghost btn-circle avatar mr-2"

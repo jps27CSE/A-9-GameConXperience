@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import background from "../../assets/bg.jpg";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
@@ -7,14 +7,21 @@ import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
   const { loginUser, googleLogin } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const handleGoogleLogin = () => {
     googleLogin()
-      .then((result) =>
+      .then((result) => {
         toast.success(`Google Logging Successfully..
        Email: ${result.user.email}
-      `)
-      )
+      `);
+        if (location.state === null) {
+          navigate("/");
+        } else {
+          navigate(`${location.state}`);
+        }
+      })
       .catch((error) => toast.error(error.message));
   };
 
