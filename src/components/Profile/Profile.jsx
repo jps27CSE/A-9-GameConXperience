@@ -16,13 +16,13 @@ const Profile = () => {
 
   return (
     <div
-      className="max-w-6xl mx-auto flex item-center justify-center"
+      className="max-w-6xl mx-auto flex item-center justify-center "
       data-aos="fade-down"
     >
       <div className="card lg:card-side bg-base-100 shadow-xl ">
         <figure>
           <img
-            className="w-[300px] h-[400px]"
+            className="w-[300px] h-[400px] mt-5 mb-10 rounded-lg"
             src={user.photoURL}
             alt="Album"
           />
@@ -47,7 +47,7 @@ const Profile = () => {
 
           <div className="card-actions justify-end">
             <Link to="/">
-              <button className="btn btn-neutral">Go Home</button>
+              <button className="btn btn-neutral mt-5">Go Home</button>
             </Link>
           </div>
         </div>
