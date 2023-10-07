@@ -70,7 +70,7 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: (C)
+#### Answer: (A)
 
 Explain: code modifies the info.favoriteFood property to "🍝," but it does not directly affect the food array. The food array remains unchanged. 
 
