@@ -10,7 +10,6 @@ const Ticket = () => {
   const intParam = parseInt(params.id);
   const navigate = useNavigate();
 
-  console.log(location);
   useEffect(() => {
     fetch("/data.json")
       .then((res) => res.json())

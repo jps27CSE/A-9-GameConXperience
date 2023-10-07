@@ -1,15 +1,25 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-
+import "./Navbar.css";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const navLinks = (
     <>
-      <li>
+      <li id="active_nav">
         <NavLink to="/">Home</NavLink>
       </li>
+      {user && (
+        <li id="active_nav">
+          <NavLink to="/profile">Profile</NavLink>
+        </li>
+      )}
+      {user && (
+        <li id="active_nav">
+          <NavLink to="/info">Leaderboard</NavLink>
+        </li>
+      )}
     </>
   );
 

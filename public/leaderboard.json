@@ -1,0 +1,84 @@
+{
+  "leaderboard": [
+    {
+      "id": 1,
+      "eventName": "Call of Duty Tournament",
+      "winner": {
+        "userName": "ProGamer42",
+        "score": 1400
+      }
+    },
+    {
+      "id": 2,
+      "eventName": "League of Legends Championship",
+      "winner": {
+        "userName": "LCSChamp",
+        "score": 2500
+      }
+    },
+    {
+      "id": 3,
+      "eventName": "FIFA World Cup",
+      "winner": {
+        "userName": "GoalMachine",
+        "score": 1800
+      }
+    },
+    {
+      "id": 4,
+      "eventName": "Overwatch Showdown",
+      "winner": {
+        "userName": "OverwatchMaster",
+        "score": 2000
+      }
+    },
+    {
+      "id": 5,
+      "eventName": "Rocket League Championship",
+      "winner": {
+        "userName": "Rocketeer",
+        "score": 2200
+      }
+    },
+    {
+      "id": 6,
+      "eventName": "Fortnite Battle Royale",
+      "winner": {
+        "userName": "FortniteKing",
+        "score": 2300
+      }
+    },
+    {
+      "id": 7,
+      "eventName": "Minecraft Builders' Challenge",
+      "winner": {
+        "userName": "CraftMaster",
+        "score": 1900
+      }
+    },
+    {
+      "id": 8,
+      "eventName": "Street Fighter V Tournament",
+      "winner": {
+        "userName": "StreetFighterChamp",
+        "score": 2600
+      }
+    },
+    {
+      "id": 9,
+      "eventName": "Counter-Strike: Global Offensive",
+      "winner": {
+        "userName": "CSGOPro",
+        "score": 2100
+      }
+    },
+    {
+      "id": 10,
+      "eventName": "Super Smash Bros. Ultimate",
+      "winner": {
+        "userName": "SmashLegend",
+        "score": 2400
+      }
+    }
+  ]
+}
