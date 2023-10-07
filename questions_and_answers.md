@@ -18,9 +18,10 @@ console.log(greetign);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: (B) 
+Explain: typographical error in the code greetign is assigned an empty object, but it was never declared previously.
 
-<i>Write your explanation here</i>
+
 
 </p>
 </details>
@@ -43,9 +44,9 @@ sum(1, "2");
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: (C)
+Explain : sum(1, "2") is the string "12" because JavaScript performs type coercion to convert the number to a string and then concatenates the two strings together.
 
-<i>Write your explanation here</i>
 
 </p>
 </details>
@@ -69,9 +70,9 @@ console.log(food);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: (C)
 
-<i>Write your explanation here</i>
+Explain: code modifies the info.favoriteFood property to "🍝," but it does not directly affect the food array. The food array remains unchanged. 
 
 </p>
 </details>
@@ -94,9 +95,9 @@ console.log(sayHi());
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: (B)
 
-<i>Write your explanation here</i>
+ the name parameter is not provided when calling the sayHi function, resulting in name being undefined
 
 </p>
 </details>
@@ -122,9 +123,9 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: (B)
 
-<i>Write your explanation here</i>
+Explain: output 2 because there are two truthy values (1 and 2) in the nums array, and the count variable is incremented for each of them
 
 </p>
 </details>
