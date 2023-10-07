@@ -41,7 +41,9 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">GameConXperience</a>
+          <a className="btn btn-ghost normal-case text-sm md:text-xl lg:text-xl">
+            GameConXperience
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
@@ -59,7 +61,9 @@ const Navbar = () => {
                 </div>
               </label>
               <div>
-                <h1 className="text-xl mr-2">{user.displayName}</h1>
+                <h1 className="text-sm md:text-xl lg:text-xl mr-2">
+                  {user.displayName}
+                </h1>
               </div>
             </>
           )}
