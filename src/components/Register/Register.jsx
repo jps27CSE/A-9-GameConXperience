@@ -4,10 +4,22 @@ import { toast } from "react-toastify";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { updateProfile } from "firebase/auth";
+import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
-  const { registerUser } = useContext(AuthContext);
+  const { registerUser, googleLogin } = useContext(AuthContext);
   const navigate = useNavigate();
+
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then((result) =>
+        toast.success(`Google Register Successfully..
+      Email: ${result.user.email}
+     `)
+      )
+      .catch((error) => toast.error(error.message));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -127,6 +139,12 @@ const Register = () => {
                 </Link>
               </p>
             </form>
+            <div className="flex mx-auto p-4">
+              <button onClick={handleGoogleLogin} className="btn btn-neutral">
+                <FcGoogle className="text-2xl" />
+                Continue with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>

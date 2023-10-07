@@ -3,9 +3,20 @@ import background from "../../assets/bg.jpg";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { toast } from "react-toastify";
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, googleLogin } = useContext(AuthContext);
+
+  const handleGoogleLogin = () => {
+    googleLogin()
+      .then((result) =>
+        toast.success(`Google Logging Successfully..
+       Email: ${result.user.email}
+      `)
+      )
+      .catch((error) => toast.error(error.message));
+  };
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -79,6 +90,12 @@ const Login = () => {
                 </Link>
               </p>
             </form>
+            <div className="flex mx-auto p-4">
+              <button onClick={handleGoogleLogin} className="btn btn-neutral">
+                <FcGoogle className="text-2xl" />
+                Continue with Google
+              </button>
+            </div>
           </div>
         </div>
       </div>

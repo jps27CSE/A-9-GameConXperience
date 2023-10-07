@@ -14,8 +14,8 @@ const Navbar = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="navbar bg-base-100">
+    <div className="max-w-6xl mx-auto sticky top-0 ">
+      <div className="navbar bg-base-100 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -69,7 +69,7 @@ const Navbar = () => {
               <button className="btn btn-secondary">Login</button>
             </Link>
           ) : (
-            <button onClick={logOut} className="btn btn-secondary">
+            <button onClick={logOut} className="btn btn-primary">
               Logout
             </button>
           )}
