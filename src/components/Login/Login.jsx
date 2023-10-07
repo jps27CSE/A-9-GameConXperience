@@ -37,6 +37,11 @@ const Login = () => {
 
         Email : ${result.user.email} 
         `);
+        if (location.state === null) {
+          navigate("/");
+        } else {
+          navigate(`${location.state}`);
+        }
       })
       .catch((error) => toast.error(error.message));
   };

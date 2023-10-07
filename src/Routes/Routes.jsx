@@ -5,6 +5,7 @@ import IndividualService from "../components/Home/Services/IndividualService/Ind
 import Login from "../components/Login/Login";
 import Register from "../components/Register/Register";
 import PrivateRoute from "./PrivateRoute";
+import Ticket from "../components/Ticket/Ticket";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -29,6 +30,14 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/ticket/:id",
+        element: (
+          <PrivateRoute>
+            <Ticket />
+          </PrivateRoute>
+        ),
       },
     ],
   },
