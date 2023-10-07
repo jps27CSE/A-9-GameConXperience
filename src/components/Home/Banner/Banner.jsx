@@ -1,11 +1,21 @@
+import { useEffect } from "react";
 import pic1 from "../../../assets/images/pic1.jpg";
 import pic2 from "../../../assets/images/pic2.jpg";
 import pic3 from "../../../assets/images/pic3.jpg";
 import pic4 from "../../../assets/images/pic4.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Banner = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
+
   return (
-    <div>
+    <div data-aos="zoom-in">
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <img

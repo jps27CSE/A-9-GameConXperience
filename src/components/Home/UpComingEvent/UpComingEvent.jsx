@@ -1,6 +1,15 @@
 import eventPic from "../../../assets/images/event.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const UpComingEvent = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
   return (
     <div>
       <div>
@@ -13,6 +22,10 @@ const UpComingEvent = () => {
         style={{
           backgroundImage: `url(${eventPic})`,
         }}
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="5000"
+        data-aos-offset="0"
       >
         <div className="hero-overlay bg-opacity-60"></div>
         <div className="hero-content text-center text-neutral-content">

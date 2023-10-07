@@ -1,9 +1,19 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import "./Navbar.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+      delay: 300,
+    });
+  }, []);
 
   const navLinks = (
     <>
@@ -24,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto  ">
+    <div className="max-w-6xl mx-auto   " data-aos="fade-down">
       <div className="navbar bg-base-100 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">

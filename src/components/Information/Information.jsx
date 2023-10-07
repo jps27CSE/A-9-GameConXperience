@@ -1,8 +1,17 @@
 import { useEffect, useState } from "react";
 import TableInfo from "./tableInfo/tableInfo";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Information = () => {
   const [data, setData] = useState([]);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
 
   useEffect(() => {
     fetch("/leaderboard.json")
@@ -16,7 +25,7 @@ const Information = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto" data-aos="fade-down">
       <div>
         <div className="overflow-x-auto">
           <table className="table table-zebra">

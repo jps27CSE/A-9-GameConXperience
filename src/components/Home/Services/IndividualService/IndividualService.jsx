@@ -1,10 +1,19 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const IndividualService = () => {
   const [data, setData] = useState([]);
   const params = useParams();
   const intParam = parseInt(params.id);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
 
   useEffect(() => {
     fetch(`/data.json`)
@@ -15,7 +24,7 @@ const IndividualService = () => {
   const filterData = data.find((indi) => indi.id === intParam);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto" data-aos="fade-down">
       <div className="grid grid-cols-4">
         <div className="col-span-2">
           <img

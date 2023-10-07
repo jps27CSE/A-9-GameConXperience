@@ -1,11 +1,24 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Profile = () => {
   const { user } = useContext(AuthContext);
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
+
   return (
-    <div className="max-w-6xl mx-auto flex item-center justify-center">
+    <div
+      className="max-w-6xl mx-auto flex item-center justify-center"
+      data-aos="fade-down"
+    >
       <div className="card lg:card-side bg-base-100 shadow-xl ">
         <figure>
           <img

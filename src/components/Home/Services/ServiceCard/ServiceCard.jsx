@@ -1,11 +1,23 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const ServiceCard = ({ service }) => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+    });
+  }, []);
   const { id, name, image, price, description } = service;
   return (
     <div>
-      <div className="card w-96 bg-base-100 shadow-xl image-full">
+      <div
+        className="card w-96 bg-base-100 shadow-xl image-full"
+        data-aos="fade-up"
+        data-aos-duration="500"
+      >
         <figure className="h-[400px] ">
           <img className="w-full" src={image} alt="Shoes" />
         </figure>

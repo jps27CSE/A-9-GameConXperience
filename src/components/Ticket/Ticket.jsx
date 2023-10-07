@@ -2,6 +2,8 @@ import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "react-toastify";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Ticket = () => {
   const { user } = useContext(AuthContext);
@@ -9,6 +11,13 @@ const Ticket = () => {
   const params = useParams();
   const intParam = parseInt(params.id);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
 
   useEffect(() => {
     fetch("/data.json")
@@ -26,7 +35,7 @@ const Ticket = () => {
 
   return (
     <div>
-      <div className=" bg-base-200">
+      <div className=" bg-base-200" data-aos="fade-down">
         <div className="hero-content flex-col ">
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form className="card-body" onSubmit={formHandle}>

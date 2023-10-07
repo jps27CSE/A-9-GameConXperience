@@ -1,8 +1,17 @@
+import { useEffect } from "react";
 import user1 from "../../../assets/users/user1.jpg";
 import user2 from "../../../assets/users/user2.jpg";
 import user3 from "../../../assets/users/user3.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Testimonials = () => {
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      offset: 500,
+    });
+  }, []);
   return (
     <div className="max-w-6xl mx-auto">
       <div>
@@ -13,7 +22,7 @@ const Testimonials = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* card 1 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right">
           <figure className="h-[400px]">
             <img src={user1} alt="Shoes" />
           </figure>
@@ -29,7 +38,7 @@ const Testimonials = () => {
         </div>
 
         {/* card2 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-down">
           <figure className="h-[400px]">
             <img src={user2} alt="Shoes" />
           </figure>
@@ -45,7 +54,7 @@ const Testimonials = () => {
         </div>
 
         {/* card3 */}
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-left">
           <figure className="h-[400px]">
             <img src={user3} alt="Shoes" />
           </figure>
