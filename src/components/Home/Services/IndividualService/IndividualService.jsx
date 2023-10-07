@@ -28,7 +28,7 @@ const IndividualService = () => {
       <div className="grid grid-cols-4">
         <div className="col-span-2">
           <img
-            className="w-full h-[500px] mb-10 mt-10 rounded-lg"
+            className="w-full lg:h-[500px] mb-10 mt-10 rounded-lg"
             src={filterData?.image}
             alt=""
           />
