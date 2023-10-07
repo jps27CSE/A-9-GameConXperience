@@ -22,7 +22,7 @@ const Profile = () => {
       <div className="card lg:card-side bg-base-100 shadow-xl ">
         <figure>
           <img
-            className="w-[300px] h-[400px] mt-5 mb-10 rounded-lg"
+            className=" w-[200px] lg:w-[300px]  h-[200px] lg:h-[400px] mt-5 lg:mb-10 rounded-lg"
             src={user.photoURL}
             alt="Album"
           />

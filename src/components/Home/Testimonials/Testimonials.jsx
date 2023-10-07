@@ -22,7 +22,10 @@ const Testimonials = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         {/* card 1 */}
-        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right">
+        <div
+          className="card w-96 bg-base-100 shadow-xl mx-auto"
+          data-aos="fade-up"
+        >
           <figure className="h-[400px]">
             <img src={user1} alt="Shoes" />
           </figure>
@@ -38,7 +41,10 @@ const Testimonials = () => {
         </div>
 
         {/* card2 */}
-        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-down">
+        <div
+          className="card w-96 bg-base-100 shadow-xl mx-auto"
+          data-aos="fade-down"
+        >
           <figure className="h-[400px]">
             <img src={user2} alt="Shoes" />
           </figure>
@@ -54,7 +60,10 @@ const Testimonials = () => {
         </div>
 
         {/* card3 */}
-        <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-left">
+        <div
+          className="card w-96 bg-base-100 shadow-xl mx-auto"
+          data-aos="fade-up"
+        >
           <figure className="h-[400px]">
             <img src={user3} alt="Shoes" />
           </figure>

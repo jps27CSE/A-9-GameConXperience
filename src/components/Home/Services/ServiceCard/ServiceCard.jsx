@@ -14,7 +14,7 @@ const ServiceCard = ({ service }) => {
   return (
     <div>
       <div
-        className="card w-96 bg-base-100 shadow-xl image-full"
+        className="card w-96 bg-base-100 shadow-xl image-full mx-auto"
         data-aos="fade-up"
         data-aos-duration="500"
       >

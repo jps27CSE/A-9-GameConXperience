@@ -16,7 +16,7 @@ const Banner = () => {
 
   return (
     <div data-aos="zoom-in">
-      <div className="carousel w-full">
+      <div className="carousel w-full ">
         <div id="item1" className="carousel-item w-full">
           <img
             src={pic1}

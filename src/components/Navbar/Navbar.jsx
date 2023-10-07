@@ -34,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="max-w-6xl mx-auto   " data-aos="fade-down">
+    <div className="max-w-6xl mx-auto">
       <div className="navbar bg-base-100 rounded-lg">
         <div className="navbar-start">
           <div className="dropdown">
@@ -61,12 +61,17 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-sm md:text-xl lg:text-xl">
+          <a
+            className="btn btn-ghost normal-case text-sm md:text-xl lg:text-xl"
+            data-aos="fade-down"
+          >
             GameConXperience
           </a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">{navLinks}</ul>
+          <ul className="menu menu-horizontal px-1" data-aos="fade-down">
+            {navLinks}
+          </ul>
         </div>
 
         <div className="navbar-end">
@@ -77,11 +82,14 @@ const Navbar = () => {
                 className="btn btn-ghost btn-circle avatar mr-2"
               >
                 <div className="w-10 rounded-full">
-                  <img src={user.photoURL} />
+                  <img src={user.photoURL} data-aos="fade-down" />
                 </div>
               </label>
               <div>
-                <h1 className="text-sm md:text-xl lg:text-xl mr-2">
+                <h1
+                  className="text-sm md:text-xl lg:text-xl mr-2"
+                  data-aos="fade-down"
+                >
                   {user.displayName}
                 </h1>
               </div>
