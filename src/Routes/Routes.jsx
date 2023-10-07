@@ -8,10 +8,12 @@ import PrivateRoute from "./PrivateRoute";
 import Ticket from "../components/Ticket/Ticket";
 import Profile from "../components/Profile/Profile";
 import Information from "../components/Information/Information";
+import ErrorPage from "../components/ErrorPage/ErrorPage";
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",

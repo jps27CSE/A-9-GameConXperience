@@ -30,8 +30,8 @@ const Information = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((item) => (
-                <TableInfo key={item.id} item={item} />
+              {data.map((item, index) => (
+                <TableInfo key={item.id} item={item} rank={index + 1} />
               ))}
             </tbody>
           </table>
